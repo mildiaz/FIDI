@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio FIDI - Investigaci&oacute;n Formativa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img class="logo-header" src="logo-fondo-oscuro.png" alt="Logo POLI">
+    <nav>
+      <button class="tab active" data-tab="portada">Portada</button>
+      <button class="tab" data-tab="quienes">&iquest;Qui&eacute;nes somos?</button>
+      <button class="tab" data-tab="formativa">Investigaci&oacute;n Formativa</button>
+      <button class="tab" data-tab="escuelas">Escuelas y grupos</button>
+      <button class="tab" data-tab="lineas">L&iacute;neas y Proyectos + Contacto</button>
+    </nav>
+    <button id="tema" class="tema" title="Cambiar claro / oscuro">&#9728;</button>
+  </header>
+  <main>
+    <section id="portada" class="pagina active">
+      <div class="portada-centro">
+        <img class="logo-portada" src="logo-fondo-oscuro.png" alt="Logo POLI">
+        <h1><span class="titulo-azul">INVESTI</span><br><span class="titulo-rosado">GACI&Oacute;N</span></h1>
+        <p class="subtitulo"><span class="icono">&#128218;</span> Formativa &bull; <span class="icono">&#127793;</span> Semilleros &bull; <span class="icono">&#128101;</span> Grupos &bull; <span class="icono">&#128221;</span> Proyectos</p>
+        <p>Acompa&ntilde;amos a estudiantes y docentes en el camino de investigar, innovar y crear. Conectamos la formaci&oacute;n con preguntas reales, proyectos y semilleros donde se aprende haciendo.</p>
+        <p><button class="btn btn-pink" onclick="irA('formativa')"><span class="icono">&#9997;</span> Conoce c&oacute;mo postularte</button> <button class="btn" onclick="irA('lineas')"><span class="icono">&#128269;</span> Explorar proyectos &rarr;</button></p>
+        <div class="numeros"><div><span class="icono">&#127793;</span><strong>30</strong><span>Semilleros de FIDI</span></div><div><span class="icono">&#127979;</span><strong>4</strong><span>Escuelas de FIDI</span></div><div><span class="icono">&#128218;</span><strong>16</strong><span>Semilleros</span></div></div>
+      </div>
+      <div class="portada-grupos">
+      <h2>Elige un grupo y entra a su detalle</h2>
+      <div class="grid grid-4">
+        <div class="card"><div class="circulo"><span class="icono-cuadro">&#129514;</span><span class="nombre-cuadro">CITIC</span></div><h3>Grupo CITIC</h3><p>Grupo de investigaci&oacute;n en Ciencias B&aacute;sicas. Matem&aacute;tica, f&iacute;sica y ciencias aplicadas.</p><button class="btn btn-pink" onclick="irA('escuelas')"><span class="icono">&#128064;</span> Ver detalle</button></div>
+        <div class="card"><div class="circulo"><span class="icono-cuadro">&#127912;</span><span class="nombre-cuadro">DAS</span></div><h3>Grupo DAS</h3><p>Grupo de investigaci&oacute;n en Dise&ntilde;o. <b>3 l&iacute;neas, 5 servicios, 11 proyectos.</b></p><button class="btn btn-pink" onclick="irA('escuelas')"><span class="icono">&#128064;</span> Ver detalle</button></div>
+        <div class="card"><div class="circulo"><span class="icono-cuadro">&#9881;</span><span class="nombre-cuadro">OPINA</span></div><h3>Grupo OPINA</h3><p>Grupo de la Escuela OPINA: Optimizaci&oacute;n, Infraestructura y Automatizaci&oacute;n.</p><button class="btn btn-pink" onclick="irA('escuelas')"><span class="icono">&#128064;</span> Ver detalle</button></div>
+        <div class="card"><div class="circulo"><span class="icono-cuadro">&#128187;</span><span class="nombre-cuadro">E-TIC</span></div><h3>Grupo E-TIC</h3><p>Grupo de la Escuela de Tecnolog&iacute;as de la Informaci&oacute;n y las Comunicaciones.</p><button class="btn btn-pink" onclick="irA('escuelas')"><span class="icono">&#128064;</span> Ver detalle</button></div>
+      </div>
+      <div class="grid grid-2">
+        <div class="card"><h3>&iquest;Qui&eacute;nes somos?</h3><p>Direcci&oacute;n de Investigaci&oacute;n, Innovaci&oacute;n y Creaci&oacute;n.</p><button class="btn btn-pink" onclick="irA('quienes')"><span class="icono">&#128064;</span> Ver m&aacute;s &rarr;</button></div>
+        <div class="card"><h3>L&iacute;neas y Proyectos + Contacto</h3><p>L&iacute;neas, servicios, proyectos y contacto general FIDI.</p><button class="btn btn-pink" onclick="irA('lineas')"><span class="icono">&#128064;</span> Ver m&aacute;s &rarr;</button></div>
+      </div>
+      </div>
+    </section>
+    <section id="quienes" class="pagina">
+      <div class="box encabezado-azul"><span class="etiqueta"><span class="icono">&#128101;</span> &iquest;QUI&Eacute;NES SOMOS?</span><h2>Direcci&oacute;n de Investigaci&oacute;n, Innovaci&oacute;n y Creaci&oacute;n</h2><p>Acompa&ntilde;amos a estudiantes y docentes en el camino de investigar, innovar y crear. Conectamos la formaci&oacute;n con preguntas reales, proyectos y semilleros donde se aprende haciendo.</p></div>
+      <div class="grid grid-3">
+        <div class="card"><div class="icono">&#127919;</div><h3>Misi&oacute;n</h3><p>Fomentar la investigaci&oacute;n formativa, la innovaci&oacute;n y la creaci&oacute;n como parte de la formaci&oacute;n, con proyectos que aportan conocimiento y soluciones.</p></div>
+        <div class="card"><div class="icono">&#128161;</div><h3>Qu&eacute; hacemos</h3><p>Acompa&ntilde;amos semilleros, grupos de investigaci&oacute;n, l&iacute;neas y proyectos, y orientamos a la comunidad para postularse y participar.</p></div>
+        <div class="card"><div class="icono">&#128151;</div><h3>Para qui&eacute;n</h3><p>Para estudiantes que quieren iniciar en investigaci&oacute;n y para docentes que dirigen semilleros y proyectos.</p></div>
+      </div>
+      <div class="box encabezado-azul"><h3><span class="icono">&#128640;</span> &iquest;Listo para empezar?</h3><p>Encuentra tu semillero y post&uacute;late en SIGIIP.</p><p><button class="btn btn-pink" onclick="irA('formativa')">Ver Investigaci&oacute;n Formativa &rarr;</button> <a class="btn btn-blanco" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener">Ir a SIGIIP &#8599;</a></p></div>
+      <div class="box"><h2><span class="icono">&#127979;</span> Direcci&oacute;n FIDI</h2><p>Qui&eacute;n coordina la investigaci&oacute;n en la Facultad.</p></div>
+      <div class="grid grid-3">
+        <div class="card"><span class="pill"><span class="icono">&#127891;</span> DECANO</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> PhD. Rafael Armando Garc&iacute;a G&oacute;mez<br><b>Correo:</b> <a href="mailto:rgarcia@poligran.edu.co">rgarcia@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128218;</span> Coordinador de Investigaci&oacute;n FIDI</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> PhD. Jos&eacute; Manuel Chauta Torres<br><b>Correo:</b> <a href="mailto:jchauta@poligran.edu.co">jchauta@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128205;</span> Coordinador de Inv. Medell&iacute;n</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> Gustavo Andr&eacute;s Araque Gonz&aacute;lez<br><b>Correo:</b> <a href="mailto:garaque@poligran.edu.co">garaque@poligran.edu.co</a></p></div>
+      </div>
+      <div class="box"><h2><span class="icono">&#127891;</span> Escuelas FIDI</h2><p>Las 4 escuelas que conforman la Facultad.</p></div>
+      <div class="grid grid-2">
+        <div class="card"><span class="pill">Escuela de Ciencias B&aacute;sicas</span><div class="foto">&#128247;<span>Foto</span></div><p><b>Director:</b> Edgar Alberto Bar&oacute;n Poveda<br><b>Correo director:</b> <a href="mailto:eabaronp@poligran.edu.co">eabaronp@poligran.edu.co</a><br><b>L&iacute;der de investigaci&oacute;n:</b> PhD. Oscar Leonardo Acevedo Pab&oacute;n<br><b>Grupo:</b> CITIC</p></div>
+        <div class="card"><span class="pill">Escuela de Dise&ntilde;o</span><div class="foto">&#128247;<span>Foto</span></div><p><b>Director:</b> Leonardo P&aacute;ez Vanegas<br><b>Correo director:</b> <a href="mailto:leopaezv@poligran.edu.co">leopaezv@poligran.edu.co</a><br><b>L&iacute;der de investigaci&oacute;n:</b> Victoria Eugenia Peters Rada<br><b>Correo l&iacute;der:</b> <a href="mailto:vpetersr@poligran.edu.co">vpetersr@poligran.edu.co</a><br><b>Grupo:</b> DAS</p></div>
+        <div class="card"><span class="pill">Escuela de Optimizaci&oacute;n, Infraestructura y Automatizaci&oacute;n</span><div class="foto">&#128247;<span>Foto</span></div><p><b>Directora:</b> PhD. Carmelina Rosario Cadenas Anaya<br><b>Correo directora:</b> <a href="mailto:ccadenas@poligran.edu.co">ccadenas@poligran.edu.co</a><br><b>L&iacute;der de investigaci&oacute;n:</b> Jairo Enrique Parra Herrera<br><b>Correo l&iacute;der:</b> <a href="mailto:jeparrah@poligran.edu.co">jeparrah@poligran.edu.co</a><br><b>Grupo:</b> OPINA</p></div>
+        <div class="card"><span class="pill">Escuela de Tecnolog&iacute;as de la Informaci&oacute;n y las Comunicaciones</span><div class="foto">&#128247;<span>Foto</span></div><p><b>Director:</b> Ricardo C&eacute;sar G&oacute;mez Vargas<br><b>Correo director:</b> <a href="mailto:rgomezva@poligran.edu.co">rgomezva@poligran.edu.co</a><br><b>L&iacute;der de investigaci&oacute;n:</b> Giovanny Andr&eacute;s Piedrahita Solorzano<br><b>Correo l&iacute;der:</b> <a href="mailto:gapiedrahita@poligran.edu.co">gapiedrahita@poligran.edu.co</a><br><b>Grupo:</b> Entornos TIC (E-TIC)</p></div>
+      </div>
+    </section>
+    <section id="formativa" class="pagina">
+      <div class="box encabezado-azul"><span class="etiqueta"><span class="icono">&#128218;</span> Investigaci&oacute;n Formativa</span><h2><span class="icono">&#127793;</span> Semilleros de Investigaci&oacute;n FIDI</h2><p>Encuentra el semillero que te interesa, conoce qui&eacute;n lo dirige y post&uacute;late en SIGIIP.</p><p class="linea-plana">30 semilleros FIDI: OPINA - E-TIC - Dise&ntilde;o - Ciencias B&aacute;sicas</p></div>
+      <div class="box formulario-box"><div class="formulario-texto"><span class="etiqueta"><span class="icono">&#128221;</span> FORMULARIO DE POSTULACIÓN</span><h2><span class="icono">&#9997;</span> Llena el formulario para postularte</h2><p>El formulario está en SIGIIP. Sigue estos pasos y no te pierdas:</p><ol class="pasos-formulario"><li><b>Paso 1:</b> Elige el semillero que te interesa abajo.</li><li><b>Paso 2:</b> Haz clic en <b>Postúlate</b> o en el botón de abajo. Te llevará a SIGIIP.</li><li><b>Paso 3:</b> En SIGIIP haz clic en <b>Postularse a semilleros</b> y llena el formulario con tus datos.</li></ol><a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener">Ir a llenar el formulario en SIGIIP &#8599;</a><p class="nota-formulario">Si ya estás en SIGIIP: filtra por Grupo de Investigación, elige DICI-HUB, da clic en Buscar y luego en Postularse a semilleros.</p></div><div class="formulario-foto"><a href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><img class="img-orientacion" src="orientacion-sigiip.png" alt="Haz clic aquí para ir a llenar el formulario en SIGIIP"></a><p class="pie-foto">Haz clic en la imagen para ir a llenar el formulario en SIGIIP.<br>As&iacute; se ve el formulario de postulaci&oacute;n.</p></div></div>
+      <div class="box"><h2><span class="icono">&#127793;</span> Semilleros FIDI</h2><input id="buscar" type="search" placeholder="Buscar semillero, profesor o escuela..."></div>
+      <div class="grid grid-3" id="lista-semilleros">
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Mónica Lizeth Sánchez Arévalo</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>Gerencia de Proyectos de Ingeniería e Iniciativas Empresariales</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Mónica Lizeth Sánchez Arévalo</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Jairo Enrique Parra Herrera</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>Logística y Métodos Cuantitativos</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Jairo Enrique Parra Herrera</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Gustavo Andrés Araque González</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>Manufactura Automatización Productividad y Calidad (Medellín)</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Gustavo Andrés Araque González</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> garaque@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Álvaro Enrique Hilarión Madariaga</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>M.A.P. Manufactura, Automatización y Producción</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Álvaro Enrique Hilarión Madariaga</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Juan Carlos Gutiérrez Vanegas</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>Análisis de Datos para una Producción más Limpia</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Juan Carlos Gutiérrez Vanegas</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Albeiro Hernán Suárez Hernández</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>Métodos Cuantitativos para la Toma de Decisiones</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Albeiro Hernán Suárez Hernández</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Jhoan Sebastián Rodríguez Rodríguez</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>Innovación y Tecnología Emergente en Ingeniería y Diseño</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Jhoan Sebastián Rodríguez Rodríguez</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="OPINA">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Gina Paola Díaz Avendaño</span></div><span class="tag"><span class="icono">&#9881;</span> OPINA</span>
+        <h3>Innovación y Tecnología Emergente en Ingeniería y Diseño</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Gina Paola Díaz Avendaño</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Gabriel Eduardo Ávila Buitrago</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>Consciencia, reflexión e innovación en TIC</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Gabriel Eduardo Ávila Buitrago</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">José Manuel Chauta Torres</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>Semillero de investigación en Teoría de Grafos</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> José Manuel Chauta Torres</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> jchauta@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Isabel Andrea Mahecha Nieto</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>Semillero de investigación en Inteligencia Artificial</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Isabel Andrea Mahecha Nieto</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Víctor Augusto Pedraza Bonilla</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>Semillero de investigación en Computación Gráfica y de Alto Desempeño</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Víctor Augusto Pedraza Bonilla</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Boris Mauricio Revelo Rendón</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>SINIOT — Internet de las Cosas</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Boris Mauricio Revelo Rendón</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Wilson Eduardo Soto Forero</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>Ingeniería y Desarrollo de Software</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Wilson Eduardo Soto Forero</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Neider Xavier Vergara Humánez</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>Semillero de Investigación en Tecnologías Emergentes (SITEM)</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Neider Xavier Vergara Humánez</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      <article class="card semillero" data-escuela="E-TIC">
+        <div class="foto foto-semillero"><span class="foto-icono">&#128247;</span><span class="foto-texto">FOTO DEL PROFESOR</span><span class="foto-nombre">Francisco Javier González Aguirre</span></div><span class="tag"><span class="icono">&#128187;</span> E-TIC</span>
+        <h3>Semillero de investigación en Redes y Seguridad de la Información</h3>
+        <p><span class="icono">&#128100;</span> <b>Nombre:</b> Francisco Javier González Aguirre</p>
+        <p><span class="icono">&#9993;</span> <b>Correo:</b> xxxxx@poligran.edu.co</p>
+        <p><span class="pill-light">Colider:</span></p>
+        <a class="btn btn-pink" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#9997;</span> Post&uacute;late &rarr;</a>
+      </article>
+      </div>
+      <p>Todos los botones POST&Uacute;LATE abren la misma p&aacute;gina de SIGIIP.</p>
+    </section>
+    <section id="escuelas" class="pagina">
+      <div class="box encabezado-azul"><span class="etiqueta"><span class="icono">&#127979;</span> Escuelas y grupos</span><h2><span class="icono">&#127979;</span> Escuelas y grupos de investigaci&oacute;n</h2><p>Cada grupo trabaja l&iacute;neas, servicios y proyectos. Para el detalle de cada grupo &mdash; l&iacute;neas, servicios, proyectos, contacto, enlace a SIGIIP y Alejandr&iacute;a &mdash; consulta SIGIIP y Alejandr&iacute;a, donde est&aacute; la informaci&oacute;n oficial y actualizada.</p><p><button class="btn btn-pink" onclick="irA('formativa')">Ver semilleros FIDI</button> <a class="btn btn-blanco" href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener">Ir a SIGIIP &#8599;</a></p></div>
+      <div class="grid grid-2">
+        <div class="card"><div class="foto foto-grupo">&#128247;<span>Foto<br>Grupo CITIC</span></div><h3><span class="icono">&#129514;</span> CITIC &mdash; Ciencias B&aacute;sicas</h3><p>Grupo de la Escuela de Ciencias B&aacute;sicas.</p><p><a class="btn" href="https://sigiipinterno.poligran.edu.co/PGrupos/Ver/14" target="_blank" rel="noopener"><span class="icono">&#128279;</span> SIGIIP &#8599;</a> <a class="btn" href="https://alejandria.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#128218;</span> Alejandr&iacute;a &#8599;</a></p></div>
+        <div class="card"><div class="foto foto-grupo">&#128247;<span>Foto<br>Grupo DAS</span></div><h3><span class="icono">&#127912;</span> DAS &mdash; Dise&ntilde;o</h3><p><b>3 l&iacute;neas, 5 servicios, 11 proyectos.</b></p><p><a class="btn" href="https://sigiipinterno.poligran.edu.co/PGrupos/Ver/8" target="_blank" rel="noopener"><span class="icono">&#128279;</span> SIGIIP &#8599;</a> <a class="btn" href="https://alejandria.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#128218;</span> Alejandr&iacute;a &#8599;</a></p></div>
+        <div class="card"><div class="foto foto-grupo">&#128247;<span>Foto<br>Grupo OPINA</span></div><h3><span class="icono">&#9881;</span> OPINA &mdash; Optimizaci&oacute;n, Infraestructura y Automatizaci&oacute;n</h3><p>Grupo de la Escuela OPINA.</p><p><a class="btn" href="https://sigiipinterno.poligran.edu.co/PGrupos/Ver/5" target="_blank" rel="noopener"><span class="icono">&#128279;</span> SIGIIP &#8599;</a> <a class="btn" href="https://alejandria.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#128218;</span> Alejandr&iacute;a &#8599;</a></p></div>
+        <div class="card"><div class="foto foto-grupo">&#128247;<span>Foto<br>Grupo E-TIC</span></div><h3><span class="icono">&#128187;</span> E-TIC &mdash; Entornos TIC</h3><p>Grupo de la Escuela de Tecnolog&iacute;as de la Informaci&oacute;n y las Comunicaciones.</p><p><a class="btn" href="https://sigiipinterno.poligran.edu.co/PGrupos/Ver/21" target="_blank" rel="noopener"><span class="icono">&#128279;</span> SIGIIP &#8599;</a> <a class="btn" href="https://alejandria.poligran.edu.co/" target="_blank" rel="noopener"><span class="icono">&#128218;</span> Alejandr&iacute;a &#8599;</a></p></div>
+      </div>
+    </section>
+    <section id="lineas" class="pagina">
+      <div class="box encabezado-azul"><span class="etiqueta"><span class="icono">&#128221;</span> L&iacute;neas y Proyectos + Contacto</span><h2><span class="icono">&#128221;</span> L&iacute;neas, proyectos y contacto</h2><p>Las l&iacute;neas orientan los proyectos de los grupos y los semilleros. Los proyectos se gestionan y consultan en SIGIIP y Alejandr&iacute;a.</p></div>
+      <div class="grid das-layout">
+        <div class="card lista-espaciada proyectos-ancho"><h3><span class="icono">&#127912;</span> DAS &mdash; Proyectos destacados (11)</h3><ul><li>Las aportaciones gr&aacute;ficas de Sergio Trujillo Magnenat y de Chanchito, revista ilustrada para ni&ntilde;os</li><li>Proyecto animaci&oacute;n &mdash; Colombia tricolor</li><li>Estudio de Atriles de &Aacute;guila Bic&eacute;fala &mdash; Museo Colonial de Bogot&aacute;</li><li>Construcci&oacute;n de horno m&oacute;vil para quema especial tipo Rak&uacute;</li><li>Dise&ntilde;o participativo para la did&aacute;ctica social &mdash; canasto Kams&aacute;</li><li>Oficios patrimoniales de la industria de la producci&oacute;n gr&aacute;fica en Medell&iacute;n</li><li>Aproximaci&oacute;n hist&oacute;rica a una pieza colonial con mopa mopa</li><li>Medici&oacute;n y desarrollo de habilidades psicomotoras en poblaci&oacute;n universitaria</li><li>Relatos y lecturas subalternas; rutas de expresi&oacute;n trazadas por los j&oacute;venes</li><li>Museo expandido: experiencias interactivas &mdash; Museo de Ciencias Naturales de La Salle</li><li>Encuentros de memoria y costura</li></ul></div>
+        <div class="das-lado">
+        <div class="card lista-espaciada"><h3><span class="icono">&#127912;</span> DAS &mdash; L&iacute;neas</h3><ul><li>Dise&ntilde;o sist&eacute;mico</li><li>Historia de la cultura material</li><li>Medios editoriales y gesti&oacute;n de contenidos</li></ul></div>
+        <div class="card lista-espaciada"><h3><span class="icono">&#127912;</span> DAS &mdash; Servicios (5)</h3><ul><li>Dise&ntilde;o para medios editoriales</li><li>Proyectos y talleres de lectura, escritura y creaci&oacute;n con comunidades</li><li>Consultor&iacute;as en dise&ntilde;o UI y UX</li><li>Dise&ntilde;o de interfaces gr&aacute;ficas</li><li>Apoyo en el desarrollo de proyectos de animaci&oacute;n</li></ul></div>
+        </div>
+      </div>
+      </div>
+      <h3><span class="icono">&#128222;</span> Contacto</h3>
+      <div class="grid grid-3">
+        <div class="card"><span class="pill"><span class="icono">&#127891;</span> DECANO</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> PhD. Rafael Armando Garc&iacute;a G&oacute;mez<br><b>Correo:</b> <a href="mailto:rgarcia@poligran.edu.co">rgarcia@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128218;</span> Coordinador de Investigaci&oacute;n FIDI</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> PhD. Jos&eacute; Manuel Chauta Torres<br><b>Correo:</b> <a href="mailto:jchauta@poligran.edu.co">jchauta@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128205;</span> Coordinador de Inv. Medell&iacute;n</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> Gustavo Andr&eacute;s Araque Gonz&aacute;lez<br><b>Correo:</b> <a href="mailto:garaque@poligran.edu.co">garaque@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128222;</span> CONTACTO GENERAL</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> jfernandez<br><b>Correo:</b> <a href="mailto:jfernandez@poligran.edu.co">jfernandez@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128222;</span> CONTACTO GENERAL</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> jwilches<br><b>Correo:</b> <a href="mailto:jwilches@poligran.edu.co">jwilches@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128222;</span> CONTACTO GENERAL</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> yperdomo<br><b>Correo:</b> <a href="mailto:yperdomo@poligran.edu.co">yperdomo@poligran.edu.co</a></p></div>
+        <div class="card"><span class="pill"><span class="icono">&#128222;</span> CONTACTO GENERAL</span><div class="foto">&#128247;<span>Foto</span></div><p><span class="icono">&#128100;</span> <b>Nombre:</b> jchauta<br><b>Correo:</b> <a href="mailto:jchauta@poligran.edu.co">jchauta@poligran.edu.co</a></p></div>
+      </div>
+    </section>
+  </main>
+  <footer><img class="logo-footer" src="logo-fondo-oscuro.png" alt="Logo POLI"><div class="footer-texto"><p><span class="icono">&#127979;</span> Direcci&oacute;n de Investigaci&oacute;n, Innovaci&oacute;n y Creaci&oacute;n &mdash; FIDI</p><p><a href="https://sigiipinterno.poligran.edu.co/" target="_blank" rel="noopener">SIGIIP</a> &middot; <a href="https://alejandria.poligran.edu.co/" target="_blank" rel="noopener">Alejandr&iacute;a</a></p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
